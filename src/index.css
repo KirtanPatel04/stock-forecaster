@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface text-white font-sans;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0f1117;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #21262d;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #30363d;
+  }
+}
+
+/* react-grid-layout — dark theme for the Webull-style layout editor */
+.react-grid-item.react-grid-placeholder {
+  background: #58a6ff;
+  opacity: 0.15;
+  border-radius: 4px;
+}
+.react-grid-item > .react-resizable-handle::after {
+  border-color: #58a6ff;
+}
+.react-grid-item > .react-resizable-handle {
+  z-index: 5;
+}
